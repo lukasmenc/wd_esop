@@ -1,59 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-md">
-          <a class="navbar-brand" href="#">Kupujpivo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kontaky</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Produkty
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#" class="dropdown-item d-flex m-2 border">
-                        <img src="./images/branka.png" class="cuh" alt="..." height="120" width="auto">
-                        <div class="ms-3">
-                            <h3>Braník</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </a>
-                </a>
-            </li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                <li class="nav-item">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">Vyhledat</button>
-                  </form>
-                </li>
-              </li>
-            </ul>
-          </div>
-      </nav>
+            <a class="navbar-brand py-3" href="index.html">Kupujpivo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item dropdown">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-5 ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button text-center" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Produkty
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button text-center" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        Světlá piva
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <a href="branka.html" class="dropdown-item d-flex m-2 border rounded border-4">
+                                                        <img src="./images/branka.png" class="cuh" alt="..." height="90" width="auto">
+                                                        <div class="ms-3">
+                                                            <h3>Braník</h3>
+                                                            <p>Klasická pražská delikatesa, kterou milují i děti.</p>
+                                                        </div>
+                                                        </a>
+                                                        <a href="#" class="dropdown-item d-flex m-2 border rounded border-4">
+                                                            <img src="./images/svijany.png" class="cuh" alt="..." height="90" width="auto">
+                                                            <div class="ms-3">
+                                                                <h3>Svijany</h3>
+                                                                <p>Kyselé pivo, které nikdy nezklame, ani za volantem.</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="dropdown-item d-flex m-2 border rounded border-4">
+                                                            <img src="./images/krušovice.png" class="cuh" alt="..." height="90" width="auto">
+                                                            <div class="ms-3">
+                                                                <h3>Krušovice</h3>
+                                                                <p>Nenajdete lepší pivo k teplé večeři s rodinou.</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="dropdown-item d-flex m-2 border rounded border-4">
+                                                            <img src="./images/zubr.png" class="cuh" alt="..." height="90" width="auto">
+                                                            <div class="ms-3">
+                                                                <h3>Zubr</h3>
+                                                                <p>Pravé poslké pivo nikdy nikoho nezabilo.</p>
+                                                            </div>
+                                                        </a>
+                                                    <a href="#" class="dropdown-item d-flex m-2 border rounded border-4">
+                                                        <img src="./images/warka).png" class="cuh" alt="..." height="90" width="auto">
+                                                        <div class="ms-3">
+                                                            <h3>Warka</h3>
+                                                            <p>Jestli chcete řídít s pivem, tohle je ono.</p>
+                                                        </div>
+                                                    </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Accordion Item #2
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                                        element. These classes control the overall appearance, as well as the showing and
+                                                        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                                        our default variables. It's also worth noting that just about any HTML can go within
+                                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        Accordion Item #3
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                                        element. These classes control the overall appearance, as well as the showing and
+                                                        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                                        our default variables. It's also worth noting that just about any HTML can go within
+                                                        the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontaky</a>
+                            </li>
+    </nav>
 
 
-            <div class="banner">
-                <div class="row">
-                <div class="col-md-6">
+    <div class="banner">
+        <div class="row w-100">
+            <div class="col-md-6">
                 <img src="./images/pivo.png" alt="">
             </div>
             <div data-aos="zoom-in-right" class="col-md-6 text-center mt-5">
@@ -62,13 +143,54 @@
                 </h1>
                 <p>Nakupujte nejkvalitnější výrobky s až 25% slevou!</p>
             </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="banner mt-5">
+        <div class="row w-100 d-flex flex-row-reverse">
+            <div class="col-md-6">
+                <img src="./images/lod.png" alt="">
+            </div>
+            <div data-aos="zoom-in-left" class="col-md-6 text-center mt-5">
+                <h1 class="fs-">
+                    Doručení vždy na čas.
+                </h1>
+                <p>V pondělí objednáte a ve středu už vyzvedáte.</p>
             </div>
         </div>
+    </div>
 
-          </div>
-        <script>
-  AOS.init();
-</script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <div class="banner mt-5">
+        <div class="row w-100 d-flex">
+            <div class="col-md-6">
+                <img src="./images/lahvac.png" alt="">
+            </div>
+            <div data-aos="zoom-in-left" class="col-md-6 text-center mt-5">
+                <h1 class="fs-">
+                    Nejlepší kvalita na světě.
+                </h1>
+                <p>Pivo vám příjde v boxu už perfektě vychlazené a nerozhrkané.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <footer class="bg-secondary mt-2">
+        <h6 class="text-center text-white fw-light py-4">Vytvořil Lukáš Menc 2023</h6>
+      </footer>
+
+    
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

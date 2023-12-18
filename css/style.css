@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    width: auto;
 
 }
 
@@ -19,10 +20,56 @@ body {
 }
 
 .cuh img {
-    height: 100px;
+    height: 60px;
     width: auto;
 }
 
 .dropdown-item {
-    width: 500px;
+    transition: 500ms ease-out 100ms;
+
+}
+
+.dropdown-item:hover {
+    background-color: rgb(49, 45, 45);
+    color: white;
+    border-color:white;
+}
+
+.dropdown-item h3 {
+    font-weight: 700;
+}
+
+.dropdown-item p {
+    font-weight: 300;
+}
+
+.banner {
+    margin-bottom: 8rem;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.accordion-header {
+    text-align: center;
+}
+
+.accordion {
+    position: absolute;
+    right: 0;
+    z-index: 01;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+.lin {
+    margin-top: 10rem;
+    font-weight: 700;
+}
+
+h6 {
+    margin: 0;
 }
