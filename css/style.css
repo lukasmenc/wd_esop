@@ -73,3 +73,28 @@ h4 {
 h6 {
     margin: 0;
 }
+
+.accordion {
+    border-color: gray;
+}
+
+.card img{
+    width: 100px;
+    height: auto;
+}
+
+.prod h1 {
+    font-weight: 500;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.prod h2 {
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 5rem;
+}
+
+.card {
+    width: 300px;
+}
