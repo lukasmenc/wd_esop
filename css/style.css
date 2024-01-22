@@ -98,3 +98,16 @@ h6 {
 .card {
     width: 300px;
 }
+
+.cen {
+    margin-left: 20rem;
+}
+
+.cart-card {
+    width: 500px;
+}
+
+.btn-group-vertical>.btn:not(:first-child),
+.btn-group-vertical>.btn-group:not(:first-child) {
+margin-top: 0;
+}
